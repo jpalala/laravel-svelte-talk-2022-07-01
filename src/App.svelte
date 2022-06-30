@@ -31,12 +31,15 @@
 		}
 	}
 </script>
+<div class="header">
+  <img src={logo} alt="Svelte Logo" width="80" height="80" />
+</div>
 <div id="full_page">
 <div class="display"> innerHTML is the key.</div>
 <div class="footer">
+
 	<PreviousPage />
-<NextPage />
-  <img src={logo} alt="Svelte Logo" />
+  <NextPage />
 
 	{pageNumber}
 	</div>
@@ -70,6 +73,17 @@
      font-weight: bold;
      font-size: 1.3rem;
      content: " \A \201D";
+}
+.header { 
+  z-index: 100;
+  width: 100%;
+  position:absolute; 
+  background: transparent;
+
+}
+.header img {
+  height: 100px;
+  left: 100px;
 }
  #full_page {
      position: absolute;
