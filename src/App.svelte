@@ -1,5 +1,7 @@
 <script>
-  import logo from './assets/svelte.png'
+  import logo from './assets/svelte.png';
+  import authMeIllustration from './assets/authenticate_me_illustration.jpeg';
+	
   import NextPage from './NextPage.svelte';
   import PreviousPage from './PreviousPage.svelte';
   import { pageNum } from './stores.js';
@@ -10,7 +12,7 @@
   let imgHeight = 200;
   let slides = ["<h1>welcome</h1>",
     "<h3>Question?</h3><p>what are three ways you can pass authentication from backend to frontend?</p>",
-    '<img src="https://i.ibb.co/yVrj7VF/IMG-20220701-141332.jpg" alt="IMG-20220701-141332" border="0">',
+    '<img src="' .authMeIllustration . '" alt="IMG-20220701-141332" border="0">',
     '<img src="https://i.ibb.co/PTGJ9yh/IMG-20220701-141405.jpg" alt="IMG-20220701-141405" border="0">',
     "<b>HTTP is Stateless<b>", "<h3>What is a CSRF attack?</h3>",
     "<h3>Authentication: secure cookies, localStorage, and JWT</h3>", "<h3>Laravel Sanctum</h3>",
